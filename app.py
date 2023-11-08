@@ -59,3 +59,9 @@ def make_prediction(image):
         return "It's a dog!"
     else:
         return "It's a cat!"
+    
+
+if __name__ == "__main__":
+    app.run(debug=True,
+            host="0.0.0.0",
+            port=int(os.environ.get("PORT", 8080)))
